@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid black;
+    color: #5b5b5b;
+    width: 80%;
+    background-color: lightgray;
+    margin: 1rem auto;
+}
+
+div div {
+    display: inline-block;
+    width: 20%;
+}
+
+div.n1 {
+    display: inline-block;
+    width: 40%;
+    background-color: #aecece;
+    border: 0.4rem dashed #57fb82;
+}
+
+div.n2 {
+    background-color: #d4b7e5;
+    border: 0.5rem dotted violet;
+}
+
+div.n3 {
+    background-color: #a3add5;
+    border: 0.7rem solid #94d2de;
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    div div {
+        width: 100%;
+    }
+    div.n1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    div.n3 p, span, a {
+        display: none;
+    }
+}
